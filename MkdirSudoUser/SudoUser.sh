@@ -9,12 +9,12 @@ else
   echo "你是输入的用户名："$sudouser
 fi 
 
-#adduser $sudouser
+adduser $sudouser
 
-#echo "ZmP8ZLg4C" | passwd --stdin $sudouser
+echo "ZmP8ZLg4C" | passwd --stdin $sudouser
 
-#chmod -v u+w /etc/sudoers
+chmod -v u+w $sudoers_path
 
-#echo "$sudouser ALL=(ALL) ALL" >>/etc/sudoers
+echo "$sudouser ALL=(ALL) ALL" >>$sudoers_path
 
-#chmod -v u-w /etc/sudoers
+chmod -v u-w $sudoers_path
